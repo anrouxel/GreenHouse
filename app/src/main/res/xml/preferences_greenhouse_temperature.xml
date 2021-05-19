@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:title="@string/preference_greenhouse_temperature"
+        app:iconSpaceReserved="false">
+
+        <EditTextPreference
+            app:key="temperature_min"
+            app:title="@string/preference_greenhouse_temperature_min"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true"/>
+
+        <EditTextPreference
+            app:key="temperature_max"
+            app:title="@string/preference_greenhouse_temperature_max"
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

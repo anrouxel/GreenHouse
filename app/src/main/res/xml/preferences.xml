@@ -1,0 +1,54 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:title="@string/preferences_greenhouse"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreference
+            app:key="greenhouse"
+            app:title="@string/preferences_greenhouse"
+            app:iconSpaceReserved="false"
+            app:summaryOn="@string/preferences_enable"
+            app:summaryOff="@string/preferences_disable"/>
+
+        <ListPreference
+            app:key="herb"
+            app:dependency="greenhouse"
+            app:title="@string/preferences_herb"
+            app:iconSpaceReserved="false"/>
+
+        <SwitchPreference
+            app:key="settings_default"
+            app:dependency="greenhouse"
+            app:title="@string/preferences_settings_default"
+            app:iconSpaceReserved="false"
+            app:summaryOn="@string/preferences_enable"
+            app:summaryOff="@string/preferences_disable"/>
+
+        <Preference
+            app:key="greenhouse_advanced"
+            app:dependency="greenhouse"
+            app:title="@string/preferences_advanced"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/preferences_app"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            app:key="preferences_network"
+            app:title="@string/preferences_network"
+            app:iconSpaceReserved="false"/>
+
+        <Preference
+            app:key="about"
+            app:title="@string/preferences_about"
+            app:summary="@string/preferences_about_version"
+            app:iconSpaceReserved="false"
+            app:selectable="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

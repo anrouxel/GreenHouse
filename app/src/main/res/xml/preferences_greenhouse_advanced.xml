@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        app:key="brightness"
+        app:title="@string/preference_greenhouse_brightness"
+        app:iconSpaceReserved="false"/>
+
+    <Preference
+        app:key="temperature"
+        app:title="@string/preference_greenhouse_temperature"
+        app:iconSpaceReserved="false"/>
+
+    <Preference
+        app:key="humidity_air"
+        app:title="@string/preference_greenhouse_humidity_air"
+        app:iconSpaceReserved="false"/>
+
+    <Preference
+        app:key="earth_moisture"
+        app:title="@string/preference_greenhouse_earth_moisture"
+        app:iconSpaceReserved="false"/>
+
+    <Preference
+        app:key="o2"
+        app:title="@string/preference_greenhouse_o2"
+        app:iconSpaceReserved="false"/>
+
+    <Preference
+        app:key="co2"
+        app:title="@string/preference_greenhouse_co2"
+        app:iconSpaceReserved="false"/>
+
+</PreferenceScreen>
