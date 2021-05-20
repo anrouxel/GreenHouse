@@ -77,9 +77,9 @@ class SettingsFragment : PreferenceFragmentCompat() {
                     val entrie: ArrayList<String> = ArrayList()
                     val entryValue: ArrayList<String> = ArrayList()
 
-                    for (position in 0..list.size){
+                    for (position in 0 until (list.size)){
                         entryValue.add(list[position].id.toString())
-                        entrie.add(list[position].name_fr.toString())
+                        entrie.add(list[position].name_fr)
                     }
                 }
             ) {
