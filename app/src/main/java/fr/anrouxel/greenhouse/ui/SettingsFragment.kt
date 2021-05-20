@@ -4,7 +4,9 @@ import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.navigation.Navigation
+import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import com.android.volley.Request
@@ -20,6 +22,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
     private var greenhouse_advanced: Preference? = null
     private var preferences_network: Preference? = null
+    private var herb: ListPreference? = null
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
@@ -55,6 +58,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
             val url = "http://$networkIP:3000/config/herb/fr"
 
             Log.d("QrFeature", url)
+            Toast.makeText(requireContext(), url, Toast.LENGTH_LONG).show()
 
             val queue = Volley.newRequestQueue(requireActivity())
             VolleyLog.DEBUG = true
@@ -68,9 +72,20 @@ class SettingsFragment : PreferenceFragmentCompat() {
                     val type = object : TypeToken<List<AromateList>>() {}.type
                     val list: List<AromateList> = Gson().fromJson(response.toString(), type)
 
-                    Log.d("QrFeature", list.toString())
+                    Log.d("QrFeature", list[0].id.toString())
+
+                    val entrie: ArrayList<String> = ArrayList()
+                    val entryValue: ArrayList<String> = ArrayList()
+
+                    for (position in 0..list.size){
+                        entryValue.add(list[position].id.toString())
+                        entrie.add(list[position].name_fr.toString())
+                    }
                 }
-            ) { Log.d("QrFeature", "error") }
+            ) {
+                Log.d("QrFeature", "error")
+                Toast.makeText(requireContext(), "Error", Toast.LENGTH_LONG).show()
+            }
 
             queue.add(jsonArrayRequest)
         } else {
