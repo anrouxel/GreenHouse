@@ -16,58 +16,12 @@
         android:label="SettingsFragment" >
         <action
             android:id="@+id/action_settingsFragment_to_settingsGreenHouseAdvancedFragment"
-            app:destination="@id/navigation" />
+            app:destination="@id/settingsGreenHouseAdvancedFragment" />
     </fragment>
-    <navigation android:id="@+id/navigation"
-        app:startDestination="@id/settingsGreenHouseAdvancedFragment">
-        <fragment
-            android:id="@+id/settingsGreenHouseAdvancedFragment"
-            android:name="fr.anrouxel.greenhouse.ui.settings.SettingsGreenHouseAdvancedFragment"
-            android:label="SettingsGreenHouseAdvancedFragment">
-            <action
-                android:id="@+id/action_settingsGreenHouseAdvancedFragment_to_settingsGreenHouseBrightnessFragment"
-                app:destination="@id/settingsGreenHouseBrightnessFragment" />
-            <action
-                android:id="@+id/action_settingsGreenHouseAdvancedFragment_to_settingsGreenHouseO2Fragment"
-                app:destination="@id/settingsGreenHouseO2Fragment" />
-            <action
-                android:id="@+id/action_settingsGreenHouseAdvancedFragment_to_settingsGreenHouseHumidityAirFragment"
-                app:destination="@id/settingsGreenHouseHumidityAirFragment" />
-            <action
-                android:id="@+id/action_settingsGreenHouseAdvancedFragment_to_settingsGreenHouseEarthMoistureFragment"
-                app:destination="@id/settingsGreenHouseEarthMoistureFragment" />
-            <action
-                android:id="@+id/action_settingsGreenHouseAdvancedFragment_to_settingsGreenHouseCO2Fragment"
-                app:destination="@id/settingsGreenHouseCO2Fragment" />
-            <action
-                android:id="@+id/action_settingsGreenHouseAdvancedFragment_to_settingsGreenHouseTemperatureFragment"
-                app:destination="@id/settingsGreenHouseTemperatureFragment" />
-        </fragment>
-        <fragment
-            android:id="@+id/settingsGreenHouseBrightnessFragment"
-            android:name="fr.anrouxel.greenhouse.ui.settings.greenhouseadvanced.SettingsGreenHouseBrightnessFragment"
-            android:label="SettingsGreenHouseBrightnessFragment" />
-        <fragment
-            android:id="@+id/settingsGreenHouseO2Fragment"
-            android:name="fr.anrouxel.greenhouse.ui.settings.greenhouseadvanced.SettingsGreenHouseO2Fragment"
-            android:label="SettingsGreenHouseO2Fragment" />
-        <fragment
-            android:id="@+id/settingsGreenHouseHumidityAirFragment"
-            android:name="fr.anrouxel.greenhouse.ui.settings.greenhouseadvanced.SettingsGreenHouseHumidityAirFragment"
-            android:label="SettingsGreenHouseHumidityAirFragment" />
-        <fragment
-            android:id="@+id/settingsGreenHouseEarthMoistureFragment"
-            android:name="fr.anrouxel.greenhouse.ui.settings.greenhouseadvanced.SettingsGreenHouseEarthMoistureFragment"
-            android:label="SettingsGreenHouseEarthMoistureFragment" />
-        <fragment
-            android:id="@+id/settingsGreenHouseCO2Fragment"
-            android:name="fr.anrouxel.greenhouse.ui.settings.greenhouseadvanced.SettingsGreenHouseCO2Fragment"
-            android:label="SettingsGreenHouseCO2Fragment" />
-        <fragment
-            android:id="@+id/settingsGreenHouseTemperatureFragment"
-            android:name="fr.anrouxel.greenhouse.ui.settings.greenhouseadvanced.SettingsGreenHouseTemperatureFragment"
-            android:label="SettingsGreenHouseTemperatureFragment" />
-    </navigation>
+    <fragment
+        android:id="@+id/settingsGreenHouseAdvancedFragment"
+        android:name="fr.anrouxel.greenhouse.ui.settings.SettingsGreenHouseAdvancedFragment"
+        android:label="SettingsGreenHouseAdvancedFragment"/>
     <fragment
         android:id="@+id/mozillaQrFeatureFragment"
         android:name="fr.anrouxel.greenhouse.ui.MozillaQrFeatureFragment"

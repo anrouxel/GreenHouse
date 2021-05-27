@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Bottom Navigation -->
     <string name="bottom_nav_home">Accueil</string>
     <string name="bottom_nav_settings">Paramètre</string>
+
+    <!-- Preference -->
     <string name="preferences_greenhouse">Serre</string>
     <string name="preferences_enable">Activer</string>
     <string name="preferences_disable">Désactiver</string>
@@ -13,24 +16,26 @@
     <string name="preferences_about">Version</string>
 
     <!-- Brightness -->
-    <string name="preference_greenhouse_brightness">Luminosité</string>
+    <string name="preference_greenhouse_brightness">Luminosité (en lumen)</string>
     <string name="preference_greenhouse_brightness_min">Luminosité minimum</string>
     <string name="preference_greenhouse_brightness_max">Luminosité maximum</string>
 
     <!-- Temperature -->
-    <string name="preference_greenhouse_temperature">Température</string>
+    <string name="preference_greenhouse_temperature">Température (en °C)</string>
     <string name="preference_greenhouse_temperature_min">Température minimum</string>
     <string name="preference_greenhouse_temperature_max">Température maximum</string>
 
     <!-- Humidity Air -->
-    <string name="preference_greenhouse_humidity_air">Humidité de l\'air</string>
+    <string name="preference_greenhouse_humidity_air">Humidité de l\'air (en %)</string>
     <string name="preference_greenhouse_humidity_air_min">Humidité de l\'air minimum</string>
     <string name="preference_greenhouse_humidity_air_max">Humidité de l\'air maximum</string>
 
     <!-- Earth Moisture -->
-    <string name="preference_greenhouse_earth_moisture">Humidité du sol</string>
+    <string name="preference_greenhouse_earth_moisture">Humidité du sol (en %)</string>
     <string name="preference_greenhouse_earth_moisture_min">Humidité du sol minimum</string>
     <string name="preference_greenhouse_earth_moisture_max">Humidité du sol maximum</string>
+
+    <!-- OnBoarding -->
     <string name="welcome_screen_title">Bienvenu</string>
     <string name="welcome_screen_image_description">Logo</string>
     <string name="onBoarding_screen_next">Suivant</string>

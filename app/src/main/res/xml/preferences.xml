@@ -15,7 +15,8 @@
             app:key="herb"
             app:dependency="greenhouse"
             app:title="@string/preferences_herb"
-            app:iconSpaceReserved="false"/>
+            app:iconSpaceReserved="false"
+            app:useSimpleSummaryProvider="true"/>
 
         <SwitchPreference
             app:key="settings_default"

@@ -1,7 +1,12 @@
 <resources>
+    <!-- AppName -->
     <string name="app_name" translatable="false">GreenHouse</string>
+
+    <!-- Bottom Navigation -->
     <string name="bottom_nav_home">Accueil</string>
     <string name="bottom_nav_settings">Paramètre</string>
+
+    <!-- Preference -->
     <string name="preferences_greenhouse">Serre</string>
     <string name="preferences_enable">Activer</string>
     <string name="preferences_disable">Désactiver</string>
@@ -14,34 +19,26 @@
     <string name="preferences_about_version" translatable="false">1.0-21w19a</string>
 
     <!-- Brightness -->
-    <string name="preference_greenhouse_brightness">Luminosité</string>
+    <string name="preference_greenhouse_brightness">Luminosité (en lumen)</string>
     <string name="preference_greenhouse_brightness_min">Luminosité minimum</string>
     <string name="preference_greenhouse_brightness_max">Luminosité maximum</string>
 
     <!-- Temperature -->
-    <string name="preference_greenhouse_temperature">Température</string>
+    <string name="preference_greenhouse_temperature">Température (en °C)</string>
     <string name="preference_greenhouse_temperature_min">Température minimum</string>
     <string name="preference_greenhouse_temperature_max">Température maximum</string>
 
     <!-- Humidity Air -->
-    <string name="preference_greenhouse_humidity_air">Humidité de l\'air</string>
+    <string name="preference_greenhouse_humidity_air">Humidité de l\'air (en %)</string>
     <string name="preference_greenhouse_humidity_air_min">Humidité de l\'air minimum</string>
     <string name="preference_greenhouse_humidity_air_max">Humidité de l\'air maximum</string>
 
     <!-- Earth Moisture -->
-    <string name="preference_greenhouse_earth_moisture">Humidité du sol</string>
+    <string name="preference_greenhouse_earth_moisture">Humidité du sol (en %)</string>
     <string name="preference_greenhouse_earth_moisture_min">Humidité du sol minimum</string>
     <string name="preference_greenhouse_earth_moisture_max">Humidité du sol maximum</string>
 
-    <!-- O2 -->
-    <string name="preference_greenhouse_o2" translatable="false">O2</string>
-    <string name="preference_greenhouse_o2_min" translatable="false">O2 minimum</string>
-    <string name="preference_greenhouse_o2_max" translatable="false">O2 maximum</string>
-
-    <string name="preference_greenhouse_co2" translatable="false">CO2</string>
-    <string name="preference_greenhouse_co2_min" translatable="false">CO2 minimum</string>
-    <string name="preference_greenhouse_co2_max" translatable="false">CO2 maximum</string>
-
+    <!-- OnBoarding -->
     <string name="welcome_screen_title">Bienvenue</string>
     <string name="welcome_screen_image_description">Logo</string>
     <string name="onBoarding_screen_next">Suivant</string>
@@ -54,6 +51,4 @@
     <string name="finish_screen_title">C\'est fini</string>
     <string name="finish_screen_subtitle">La configuration de l\'application est terminé</string>
     <string name="onBoarding_screen_finish">Terminer</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
