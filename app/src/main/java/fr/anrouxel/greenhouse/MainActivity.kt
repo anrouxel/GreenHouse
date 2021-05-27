@@ -33,4 +33,9 @@ class MainActivity : AppCompatActivity() {
         val sharedPref = this.getSharedPreferences("data", Context.MODE_PRIVATE)
         return sharedPref.getBoolean("onBoarding", false)
     }
+
+    override fun onNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onNavigateUp()
+    }
 }

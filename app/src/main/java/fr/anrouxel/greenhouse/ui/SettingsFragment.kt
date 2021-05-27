@@ -4,6 +4,8 @@ import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
 import androidx.preference.ListPreference
 import androidx.preference.Preference
@@ -84,7 +86,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
                 },
                 {
                     herb?.isEnabled = false
-                    Log.d("QrFeature", "Error")
+                    Toast.makeText(requireContext(), "Erreur", Toast.LENGTH_SHORT).show()
                 }
             )
 
@@ -116,7 +118,7 @@ class SettingsFragment : PreferenceFragmentCompat() {
                     herb?.setDefaultValue(aromate)
                 },
                 {
-                    Log.d("QrFeature", "Error")
+                    Toast.makeText(requireContext(), "Erreur", Toast.LENGTH_SHORT).show()
                 }
             )
             queue.add(jsonObjectRequest)

@@ -1,38 +1,27 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <EditTextPreference
-        app:key="brightness"
-        app:title="@string/preference_greenhouse_brightness"
+        android:key="brightness"
+        android:title="@string/preference_greenhouse_brightness"
         app:iconSpaceReserved="false"
         app:useSimpleSummaryProvider="true"/>
 
     <EditTextPreference
-        app:key="temperature"
-        app:title="@string/preference_greenhouse_temperature"
+        android:key="temperature"
+        android:title="@string/preference_greenhouse_temperature"
         app:iconSpaceReserved="false"
-        app:useSimpleSummaryProvider="true"/>
+        app:useSimpleSummaryProvider="true" />
 
     <SeekBarPreference
-        app:key="humidity_air"
-        app:title="@string/preference_greenhouse_humidity_air"
-        app:iconSpaceReserved="false"
-        app:showSeekBarValue="true"/>
-
-    <SeekBarPreference
-        app:key="earth_moisture"
-        app:title="@string/preference_greenhouse_earth_moisture"
+        android:key="humidity_air"
+        android:title="@string/preference_greenhouse_humidity_air"
         app:iconSpaceReserved="false"
         app:showSeekBarValue="true"/>
 
     <SeekBarPreference
-        app:key="o2"
-        app:title="@string/preference_greenhouse_o2"
-        app:iconSpaceReserved="false"
-        app:showSeekBarValue="true"/>
-
-    <SeekBarPreference
-        app:key="co2"
-        app:title="@string/preference_greenhouse_co2"
+        android:key="earth_moisture"
+        android:title="@string/preference_greenhouse_earth_moisture"
         app:iconSpaceReserved="false"
         app:showSeekBarValue="true"/>
 

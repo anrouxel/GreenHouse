@@ -19,6 +19,7 @@ class HomeFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         (activity as AppCompatActivity).supportActionBar?.show()
+
         val bottom_nav: BottomNavigationView = requireActivity().findViewById(R.id.bottom_nav)
         bottom_nav.visibility = View.VISIBLE
 
