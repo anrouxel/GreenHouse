@@ -1,7 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- AppName -->
-    <string name="app_name" translatable="false">GreenHouse</string>
-
     <!-- Bottom Navigation -->
     <string name="bottom_nav_home">Accueil</string>
     <string name="bottom_nav_settings">Paramètre</string>
@@ -16,7 +14,6 @@
     <string name="preferences_app">Application</string>
     <string name="preferences_network">Réseau</string>
     <string name="preferences_about">Version</string>
-    <string name="preferences_about_version" translatable="false">1.0-21w19a</string>
 
     <!-- Brightness -->
     <string name="preference_greenhouse_brightness">Luminosité (en lumen)</string>
@@ -39,7 +36,7 @@
     <string name="preference_greenhouse_earth_moisture_max">Humidité du sol maximum</string>
 
     <!-- OnBoarding -->
-    <string name="welcome_screen_title">Bienvenue</string>
+    <string name="welcome_screen_title">Bienvenu</string>
     <string name="welcome_screen_image_description">Logo</string>
     <string name="onBoarding_screen_next">Suivant</string>
     <string name="permission_screen_title">Camera</string>
